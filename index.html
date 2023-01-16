@@ -159,12 +159,56 @@
 					</div>
 				</section>
 
-			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
+				<!-- Five -->
+				<section id="five" class="spotlight style2 right">
+					
+					<span class="image fit main bottom"><img src="images/achive-bg.webps" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Why will you choose our app? </h2>
+						</header>
+						<div class="banner-pager clearfix" id="banner-pager">
+							<a class="pager active" data-slide-index="0">
+								<div class="ei-service-icon-text text-right appeight-headline pera-content flex">
+									<span class="icon solid alt major fa-lightbulb"></span>
+									<div class="ei-service-text">
+										<h3>Planning</h3>
+										<p>We strategise you idea into a successful application, by proper planning , research and gathering functional requirements.</p>
+									</div>
+								</div>
+							</a>
+	
+							<a class="pager" data-slide-index="1">
+								<div class="ei-service-icon-text text-right appeight-headline pera-content flex">
+									<span class="icon solid alt major fa-paint-brush"></span>
+									<div class="ei-service-text">
+										<h3>UI/UX Designing</h3>
+										<p>For the top-notch User Experience we have a dedicated team of UI/UX and Graphics Designers to serve you the best.</p>
+									</div>
+								</div>
+							</a>
+	
+							<a class="pager" data-slide-index="2">
+								<div class="ei-service-icon-text text-right appeight-headline pera-content flex">
+									<span class="icon solid alt major fa-code"></span>
+									<div class="ei-service-text">
+										<h3>Development</h3>
+										<p>We have a strong technical engineers, focused on developing customer oriented solutions with a bug free experience.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Six -->
+				<section id="six" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
-							<h2>Magna faucibus lorem diam</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+							<h2>Contact Us</h2>
+							<p>Ready To Start Your Business?</p>
 						</header>
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50">
@@ -186,7 +230,7 @@
 						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Ajath. All rights reserved.</li><li>Design: <a target="_blank" href="https://www.linkedin.com/in/apoorv-verma-397782195/">Apoorv Verma</a></li>
+						<li>&copy; Ajath. All rights reserved.</li><li>Design: <a target="_blank" href="https://apoorvverma.tech/">Apoorv Verma</a></li>
 					</ul>
 				</footer>
 
@@ -201,6 +245,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://smtpjs.com/v3/smtp.js">
+				function sendMail(host,username,password,to,from,subject,body){
+					Email.send({
+						Host : host,
+						Username : username,
+						Password : password,
+						To : to,
+						From : from,
+						Subject : subject,
+						Body : body
+					}).then(
+					message => alert(message)
+					);
+				}
+			</script>
 
 	</body>
 </html>

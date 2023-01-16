@@ -4153,3 +4153,10 @@ input, select, textarea {
 #logo{
 	font-weight: 600!important;
 }
+
+.ei-service-text{
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+}
